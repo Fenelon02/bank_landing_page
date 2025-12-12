@@ -1,5 +1,11 @@
+import HeroSection from "./components/HeroSection";
+import ValueProposition from "./components/ValueProposition";
+
 export default function Home() {
   return (
-    <h1>lalalala</h1>
+    <div>
+      <HeroSection/>
+      <ValueProposition/>
+    </div>
   );
 }
