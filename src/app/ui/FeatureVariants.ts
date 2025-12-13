@@ -1,0 +1,20 @@
+export const featureCardVariants = {
+  primary: {
+    base: "bg-white flex flex-col w-80 h-96 rounded-xl p-6",
+    text: "font-bold text-4xl bg-linear-to-r from-blue-900 to-blue-400 bg-clip-text text-transparent text-left",
+  },
+
+  secondary: {
+    base: "bg-linear-to-t from-blue-400 to-blue-900 flex flex-col w-80 h-96 rounded-xl p-6",
+    text: "font-bold text-4xl text-white text-center",
+  },
+
+  tertiary: {
+    base: "bg-white flex flex-col w-80 h-96 rounded-xl p-6",
+    text: "font-bold text-4xl bg-linear-to-r from-blue-900 to-blue-400 bg-clip-text text-transparent text-right",
+  },
+}
+
+
+
+export type FeatureCardVariant = keyof typeof featureCardVariants
