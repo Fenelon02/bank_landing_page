@@ -1,19 +1,21 @@
 export const featureCardVariants = {
   primary: {
-    base: "bg-white flex flex-col w-80 h-96 rounded-xl p-6",
-    text: "font-bold text-4xl bg-linear-to-r from-blue-900 to-blue-400 bg-clip-text text-transparent text-left",
+    base: "bg-white flex flex-col w-full md:w-80 h-96 rounded-xl p-6",
+    text: "font-bold text-3xl md:text-4xl bg-linear-to-r from-blue-900 to-blue-400 bg-clip-text text-transparent text-left",
   },
 
   secondary: {
-    base: "bg-linear-to-t from-blue-400 to-blue-900 flex flex-col w-80 h-96 rounded-xl p-6",
-    text: "font-bold text-4xl text-white text-center",
+    base: "bg-linear-to-t from-blue-400 to-blue-900 md:w-80 flex flex-col w-full h-96 rounded-xl p-6",
+    text: "font-bold text-3xl md:text-4xl text-white text-center",
   },
 
   tertiary: {
-    base: "bg-white flex flex-col w-80 h-96 rounded-xl p-6",
-    text: "font-bold text-4xl bg-linear-to-r from-blue-900 to-blue-400 bg-clip-text text-transparent text-right",
+    base: "bg-white flex flex-col w-full md:w-80 h-96 rounded-xl p-6",
+    text: "font-bold text-3xl md:text-4xl bg-linear-to-r from-blue-900 to-blue-400 bg-clip-text text-transparent text-right",
   },
 }
+
+
 
 
 
