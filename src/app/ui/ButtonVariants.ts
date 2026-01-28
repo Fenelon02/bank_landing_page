@@ -11,11 +11,11 @@ export const buttonVariants = {
         disabled: "opacity-50 cursor-not-allowed",
     }, outline: {
         base: "bg-transparent text-blue-700 border border-blue-700 rounded-lg cursor-pointer",
-        hover: "hover:bg-blue-700 text-white transition-color delay-50",
+        hover: "hover:bg-blue-700 text-white transition-color delay-50",       
         active: "activate:scale-95",
         disabled: "opacity-50 cursor-not-allowed",
     }, transparent: {
-        base: "bg-white/12 backdrop-blur-xs text-white border outline-none shadow shadow-gray-600 border-white/20 rounded-lg cursor-pointer",
+        base: "bg-white/12 backdrop-blur-xs border outline-none shadow shadow-gray-600 border-white/20 rounded-lg cursor-pointer text-blue-300",
         hover: "hover:backdrop-blur-sm hover:shadow hover:shadow-gray-700",
         active: "activate:scale-95",
         disabled: "opacity-50 cursor-not-allowed",
