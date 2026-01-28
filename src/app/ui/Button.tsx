@@ -1,9 +1,9 @@
-import { buttonVariants, Variant } from "./buttonVariants"
+import { buttonVariants, Variant } from "./ButtonVariants"
 import { ButtonSizes, Size } from "./ButtonSizes";
 
-type ButtonProps = {variant: Variant, disabled: boolean, children: any, size: Size, additionalClass?: string, icon?: any}
+type ButtonProps = {variant: Variant, disabled: boolean, children: any, size: Size, additionalClass?: string, icon?: any, onClick?: () => void}
 
-export default function Button({variant, disabled,  children,  size,  additionalClass = "", icon} : ButtonProps){
+export default function Button({variant, disabled,  children,  size,  additionalClass = "", icon, onClick} : ButtonProps){
 
   const btnClass = [
     buttonVariants[variant].base,
@@ -15,7 +15,7 @@ export default function Button({variant, disabled,  children,  size,  additional
   ].join(" ");
 
     return(
-        <button className={btnClass} disabled={disabled}>
+        <button className={btnClass} disabled={disabled} onClick={onClick}>
         {icon && <span className="mr-2">{icon}</span>} {children}
         </button>
     )
